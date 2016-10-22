@@ -1,0 +1,3 @@
+---
+# defaults file for gvm-dep-ubuntu
+gvm_dep_from_source: no

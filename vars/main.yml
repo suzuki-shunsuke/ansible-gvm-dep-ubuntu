@@ -1,0 +1,13 @@
+---
+# vars file for gvm-dep-ubuntu
+gvm_dep_dep:
+- curl
+- bison
+gvm_dep_build_dep:
+- git
+- mercurial
+- make
+- binutils
+- gcc
+- build-essential
+gvm_dep_nonroot: "{{(ansible_env.HOME == '/root') | ternary('no', 'yes')}}"

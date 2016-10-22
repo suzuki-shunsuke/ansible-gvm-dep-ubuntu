@@ -1,0 +1,17 @@
+---
+# tasks file for gvm-dep-ubuntu
+- name: Install gvm essential dependencies
+  apt: 
+    name: "{{item}}"
+    update_cache: yes
+    install_recommends: no
+  become: "{{gvm_dep_nonroot}}"
+  with_items: "{{gvm_dep_dep}}"
+- name: Install gvm build dependencies
+  apt: 
+    name: "{{item}}"
+    update_cache: yes
+    install_recommends: no
+  become: "{{gvm_dep_nonroot}}"
+  with_items: "{{gvm_dep_build_dep}}"
+  when: "{{gvm_dep_from_source}}"
