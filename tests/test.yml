@@ -1,0 +1,6 @@
+---
+- hosts: default
+  roles:
+  - ansible-gvm-dep-ubuntu
+  - role: ansible-gvm-dep-ubuntu
+    gvm_dep_from_source: yes
