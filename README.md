@@ -5,6 +5,10 @@ gvm-dep-ubuntu
 
 Install [gvm dependencies on Ubuntu](https://github.com/moovweb/gvm#debianubuntu).
 
+> # This role is deprecated
+>
+> From the version 3.0.0, [suzuki-shunsuke.gvm](https://galaxy.ansible.com/suzuki-shunsuke/gvm/) supports to install build dependencies.
+
 Requirements
 ------------
 
